@@ -51,7 +51,7 @@ int color (int x) {
     else return 15;
 }
 
-void dote(int k)
+void doteRame(int k)
 {
     printf("\e[H\e[J\e[?7l");
     for (int i = 0; i < 16; i++) {
@@ -69,6 +69,6 @@ void dote(int k)
 }
 
 int main() {
-    for (int k = 0; k < 55; k++) {dote(k);}
-    for (int k = 55; k > 0; k--) {dote(k);}
+    for (int k = 0; k < 55; k++) {doteRame(k);}
+    for (int k = 55; k > 0; k--) {doteRame(k);}
 }
